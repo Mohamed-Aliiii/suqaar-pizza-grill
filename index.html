@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Suqaar Pizza & Grill | Niagara Falls</title>
+
+<meta name="description" content="Fresh halal pizza, wings, burgers, grill favourites, and family specials in Niagara Falls. Order online from Suqaar Pizza & Grill.">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f5f1e8;
+color:#111;
+}
+
+a{
+text-decoration:none;
+}
+
+/* TOP BAR */
+
+.top-bar{
+background:#000;
+color:#fff;
+padding:12px 8%;
+display:flex;
+justify-content:space-between;
+font-size:16px;
+}
+
+.top-bar span{
+color:#f7c325;
+font-weight:bold;
+}
+
+/* HEADER */
+
+header{
+background:rgba(196,0,0,0.92);
+backdrop-filter:blur(8px);
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:70px;
+height:70px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.logo h1{
+color:#fff;
+font-size:38px;
+}
+
+nav{
+display:flex;
+align-items:center;
+gap:35px;
+}
+
+nav a{
+color:#fff;
+font-weight:bold;
+font-size:18px;
+}
+
+.order-btn{
+background:#f7c325;
+padding:14px 28px;
+border-radius:40px;
+color:#000;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+height:95vh;
+background:
+linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.55)),
+url('party_square_pizza.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:0 8%;
+}
+
+.hero-content{
+max-width:760px;
+}
+
+.tag{
+display:inline-block;
+background:#f7c325;
+padding:10px 22px;
+border-radius:30px;
+font-weight:bold;
+margin-bottom:25px;
+}
+
+.hero-content h2{
+font-size:78px;
+line-height:1.05;
+color:#fff;
+margin-bottom:25px;
+}
+
+.hero-content p{
+font-size:24px;
+line-height:1.7;
+color:#fff;
+margin-bottom:35px;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn-primary{
+background:#f7c325;
+padding:18px 35px;
+border-radius:40px;
+font-weight:bold;
+color:#000;
+display:inline-block;
+}
+
+.btn-secondary{
+border:2px solid #fff;
+padding:18px 35px;
+border-radius:40px;
+font-weight:bold;
+color:#fff;
+display:inline-block;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+text-align:center;
+margin-bottom:70px;
+}
+
+.section-title span{
+color:#c40000;
+font-weight:bold;
+letter-spacing:3px;
+font-size:18px;
+}
+
+.section-title h2{
+font-size:78px;
+margin-top:10px;
+}
+
+/* MENU */
+
+.menu-section{
+padding:120px 8%;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:35px;
+}
+
+.menu-card{
+background:#fff;
+border-radius:30px;
+padding:40px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.menu-card:hover{
+transform:translateY(-8px);
+}
+
+.menu-content h3{
+font-size:38px;
+margin-bottom:18px;
+}
+
+.menu-content p{
+font-size:20px;
+line-height:1.7;
+margin-bottom:18px;
+color:#444;
+}
+
+.menu-content span{
+font-size:28px;
+font-weight:bold;
+color:#c40000;
+}
+
+/* VISUAL MENU */
+
+.visual-menu{
+padding:100px 8%;
+background:#faf6ee;
+}
+
+.visual-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.visual-img{
+overflow:hidden;
+border-radius:30px;
+box-shadow:0 14px 35px rgba(0,0,0,0.18);
+}
+
+.visual-img img{
+width:100%;
+height:550px;
+object-fit:cover;
+object-position:center;
+}
+
+/* CLOVER */
+
+.clover-section{
+background:#000;
+color:#fff;
+text-align:center;
+padding:100px 8%;
+}
+
+.clover-section h2{
+font-size:60px;
+margin-bottom:25px;
+}
+
+.clover-section p{
+font-size:22px;
+line-height:1.8;
+max-width:900px;
+margin:0 auto 35px;
+}
+
+/* ABOUT */
+
+.about-section{
+padding:120px 8%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+background:#fff;
+border-radius:40px;
+margin:0 8%;
+}
+
+.about-section img{
+width:100%;
+border-radius:30px;
+box-shadow:0 12px 30px rgba(0,0,0,0.15);
+object-fit:cover;
+height:100%;
+}
+
+.about-section h2{
+font-size:58px;
+line-height:1.08;
+margin-top:10px;
+margin-bottom:35px;
+}
+
+.about-section p{
+font-size:22px;
+line-height:1.8;
+margin-bottom:20px;
+}
+
+/* CONTACT */
+
+.contact-section{
+padding:120px 8%;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+}
+
+.contact-card{
+background:#fff;
+padding:40px;
+border-radius:30px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.contact-card h3{
+font-size:34px;
+margin-bottom:20px;
+color:#c40000;
+}
+
+.contact-card p{
+font-size:20px;
+line-height:1.9;
+}
+
+iframe{
+width:100%;
+height:520px;
+border:0;
+border-radius:30px;
+}
+
+/* FOOTER */
+
+footer{
+background:#000;
+color:#fff;
+padding:80px 8%;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:50px;
+}
+
+.footer-grid h4{
+font-size:24px;
+margin-bottom:20px;
+color:#f7c325;
+}
+
+.footer-grid p,
+.footer-grid li{
+line-height:2;
+font-size:18px;
+}
+
+.footer-grid ul{
+list-style:none;
+}
+
+.footer-grid a{
+color:#fff;
+}
+
+.footer-bottom{
+margin-top:60px;
+text-align:center;
+font-size:18px;
+}
+
+/* FLOATING BUTTON */
+
+.floating-order{
+position:fixed;
+right:25px;
+bottom:25px;
+background:#f7c325;
+color:#000;
+padding:16px 28px;
+border-radius:40px;
+font-weight:bold;
+z-index:999;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+.top-bar{
+flex-direction:column;
+text-align:center;
+gap:8px;
+}
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+.logo h1{
+font-size:28px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+gap:18px;
+}
+
+.hero{
+height:auto;
+padding:90px 8%;
+}
+
+.hero-content h2{
+font-size:52px;
+}
+
+.hero-content p{
+font-size:20px;
+}
+
+.menu-grid,
+.visual-grid,
+.about-section,
+.contact-grid,
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+.section-title h2{
+font-size:50px;
+}
+
+.clover-section h2,
+.about-section h2{
+font-size:42px;
+}
+
+.about-section{
+margin:0;
+padding:80px 8%;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+<div>Fresh Halal Pizza, Grill, Wings & Family Specials in Niagara Falls</div>
+<div><span>Call to Order:</span> (289) 296-2882</div>
+</div>
+
+<header>
+
+<div class="logo">
+<img src="IMG_2468.jpg" alt="Suqaar Logo">
+<h1>Suqaar Pizza & Grill</h1>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+<a class="order-btn"
+href="https://www.clover.com/online-ordering/suqaar-restaurant-niagara-falls"
+target="_blank">
+Order Online
+</a>
+
+</nav>
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="tag">Halal • Fresh • Local</div>
+
+<h2>
+Bold Flavours,
+Fresh Pizza,
+and Grill
+Favourites.
+</h2>
+
+<p>
+Welcome to Suqaar Pizza & Grill, where freshly prepared pizza,
+wings, burgers, grilled meals, and family specials come together
+with warm hospitality and unforgettable flavour.
+</p>
+
+<div class="hero-buttons">
+
+<a class="btn-primary"
+href="https://www.clover.com/online-ordering/suqaar-restaurant-niagara-falls"
+target="_blank">
+Order Online with Clover
+</a>
+
+<a class="btn-secondary" href="#menu">
+View Menu
+</a>
+
+</div>
+</div>
+</section>
+
+<section class="menu-section" id="menu">
+
+<div class="section-title">
+<span>EXPLORE</span>
+<h2>Our Menu</h2>
+</div>
+
+<div class="menu-grid">
+
+<div class="menu-card">
+<div class="menu-content">
+<h3>Party Square Pizza</h3>
+<p>1 topping party square pizza.</p>
+<span>$23.99</span>
+</div>
+</div>
+
+<div class="menu-card">
+<div class="menu-content">
+<h3>Duo Deal</h3>
+<p>2 pizzas, 6 toppings total, 3 drinks, and 2 dips.</p>
+<span>M $23.99 | L $28.99 | XL $33.99</span>
+</div>
+</div>
+
+<div class="menu-card">
+<div class="menu-content">
+<h3>Chicken Shawarma Pizza</h3>
+<p>Garlic base, chicken shawarma, red onions, tomatoes, signature garlic drizzle.</p>
+<span>M $15.99 | L $18.99 | XL $21.99</span>
+</div>
+</div>
+
+<div class="menu-card">
+<div class="menu-content">
+<h3>BBQ Chicken Pizza</h3>
+<p>BBQ sauce base, BBQ chicken, green peppers, and onions.</p>
+<span>M $15.99 | L $18.99 | XL $21.99</span>
+</div>
+</div>
+
+<div class="menu-card">
+<div class="menu-content">
+<h3>Butter Chicken Pizza</h3>
+<p>Butter chicken sauce, butter chicken, green peppers, red peppers, and onions.</p>
+<span>M $15.99 | L $18.99 | XL $21.99</span>
+</div>
+</div>
+
+<div class="menu-card">
+<div class="menu-content">
+<h3>Tandoori Chicken Pizza</h3>
+<p>Tandoori base, tandoori chicken, onions, and green peppers.</p>
+<span>M $15.99 | L $18.99 | XL $21.99</span>
+</div>
+</div>
+
+<div class="menu-card">
+<div class="menu-content">
+<h3>Wings</h3>
+<p>Classic wings available in 1 lb, 2 lb, and 5 lb portions.</p>
+<span>1 lb $9.99 | 2 lb $18.99 | 5 lb $45.99</span>
+</div>
+</div>
+
+<div class="menu-card">
+<div class="menu-content">
+<h3>Loaded Fries</h3>
+<p>Crispy fries topped with cheese, savory chicken, jalapeños, and sauces.</p>
+<span>$10.99</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="visual-menu">
+
+<div class="section-title">
+<span>VISUAL MENU</span>
+<h2>Explore Our Full Menu</h2>
+</div>
+
+<div class="visual-grid">
+
+<div class="visual-img">
+<img src="menu_page_1_clean.jpg" alt="Menu Page One">
+</div>
+
+<div class="visual-img">
+<img src="menu_page_2_clean.jpg" alt="Menu Page Two">
+</div>
+
+</div>
+</section>
+
+<section class="clover-section">
+
+<h2>Order Online Securely Through Clover</h2>
+
+<p>
+Place your order online using Suqaar Pizza & Grill’s Clover ordering system.
+Clover securely handles the cart, checkout, payment, receipts, and order notifications.
+</p>
+
+<a class="btn-primary"
+href="https://www.clover.com/online-ordering/suqaar-restaurant-niagara-falls"
+target="_blank">
+Start Your Order
+</a>
+
+</section>
+
+<section class="about-section" id="about">
+
+<div>
+
+<span style="
+color:#c40000;
+font-weight:bold;
+letter-spacing:4px;
+font-size:18px;
+display:block;
+margin-bottom:14px;
+">
+ABOUT US
+</span>
+
+<h2>
+Fresh Food, Warm Service, and Flavour You Remember.
+</h2>
+
+<p>
+Suqaar Pizza & Grill serves fresh halal pizza, grill favourites,
+wings, burgers, sides, drinks, and family meals in Niagara Falls.
+</p>
+
+<p>
+Whether you are ordering lunch, dinner, or a meal for the whole family,
+Suqaar brings together freshness, value, and bold flavour in every order.
+</p>
+
+<a class="btn-primary"
+href="https://www.clover.com/online-ordering/suqaar-restaurant-niagara-falls"
+target="_blank">
+Order Now
+</a>
+
+</div>
+
+<img src="party_square_pizza.jpg" alt="Fresh Pizza">
+
+</section>
+
+<section class="contact-section" id="contact">
+
+<div class="section-title">
+<span>VISIT US</span>
+<h2>Contact & Location</h2>
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h3>Suqaar Pizza & Grill</h3>
+
+<p><strong>Phone:</strong> (289) 296-2882</p>
+<p><strong>Email:</strong> info@suqaar.ca</p>
+<p><strong>Address:</strong> 6710 Drummond Road, Niagara Falls, Ontario</p>
+
+<br>
+
+<h3>Hours</h3>
+
+<p>Sunday: 12 p.m. – 1 a.m.</p>
+<p>Monday: 12 p.m. – 1 a.m.</p>
+<p>Tuesday: 12 p.m. – 1 a.m.</p>
+<p>Wednesday: 12 p.m. – 1 a.m.</p>
+<p>Thursday: 12 p.m. – 1 a.m.</p>
+<p>Friday: 12 p.m. – 1 a.m.</p>
+<p>Saturday: 12 p.m. – 1 a.m.</p>
+
+</div>
+
+<iframe src="https://www.google.com/maps?q=6710+Drummond+Road+Niagara+Falls+Ontario&output=embed"></iframe>
+
+</div>
+</section>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h4>Suqaar Pizza & Grill</h4>
+<p>
+Fresh halal pizza, wings, grill favourites,
+burgers, sides, drinks, and family meals in Niagara Falls.
+</p>
+</div>
+
+<div>
+<h4>Quick Links</h4>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+
+<div>
+<h4>Order & Contact</h4>
+<ul>
+<li><a href="https://www.clover.com/online-ordering/suqaar-restaurant-niagara-falls" target="_blank">Order Online</a></li>
+<li><a href="tel:+12892962882">Call Restaurant</a></li>
+<li><a href="mailto:info@suqaar.ca">Email Us</a></li>
+<li><a href="https://www.google.com/maps/search/?api=1&query=6710+Drummond+Road+Niagara+Falls+Ontario" target="_blank">Open in Google Maps</a></li>
+</ul>
+</div>
+
+<div>
+<h4>Social Links</h4>
+<ul>
+<li><a href="#">Facebook</a></li>
+<li><a href="#">Instagram</a></li>
+<li><a href="#">TikTok</a></li>
+<li><a href="https://nasirtech.ca" target="_blank">Website by Nasir Tech</a></li>
+</ul>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 Suqaar Pizza & Grill.
+All Rights Reserved.
+Website developed by Nasir Tech.
+</div>
+
+</footer>
+
+<a class="floating-order"
+href="https://www.clover.com/online-ordering/suqaar-restaurant-niagara-falls"
+target="_blank">
+Order Online
+</a>
+
+</body>
+</html>
