@@ -333,17 +333,6 @@ line-height:1.9;
 }
 
 .hours-list div{
-grid-template-columns:130px auto;
-font-size:18px;
-gap:18px;
-align-items:center;
-}
-
-.hours-list div span:last-child{
-white-space:nowrap;
-}
-
-.hours-list div{
 display:grid;
 grid-template-columns:170px 1fr;
 gap:20px;
@@ -353,6 +342,10 @@ line-height:1.9;
 
 .hours-list span:first-child{
 font-weight:bold;
+}
+
+.hours-list div span:last-child{
+white-space:nowrap;
 }
 
 iframe{
@@ -400,21 +393,6 @@ color:#fff;
 margin-top:60px;
 text-align:center;
 font-size:18px;
-}
-
-/* FLOATING BUTTON */
-
-.floating-order{
-position:fixed;
-right:25px;
-bottom:25px;
-background:#f7c325;
-color:#000;
-padding:16px 28px;
-border-radius:40px;
-font-weight:bold;
-z-index:999;
-box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
 /* RESPONSIVE */
@@ -478,9 +456,13 @@ padding:80px 8%;
 }
 
 .hours-list div{
-grid-template-columns:130px 1fr;
+grid-template-columns:120px 1fr;
 font-size:18px;
-gap:12px;
+gap:10px;
+}
+
+.hours-list div span:last-child{
+white-space:normal;
 }
 
 }
@@ -794,12 +776,6 @@ Website developed by Nasir Tech.
 </div>
 
 </footer>
-
-<a class="floating-order"
-href="https://www.clover.com/online-ordering/suqaar-restaurant-niagara-falls"
-target="_blank">
-Order Online
-</a>
 
 </body>
 </html>
