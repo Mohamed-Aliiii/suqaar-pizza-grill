@@ -9,7 +9,6 @@
 <meta name="description" content="Fresh halal pizza, wings, burgers, grill favourites, and family specials in Niagara Falls. Order online from Suqaar Pizza & Grill.">
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -101,7 +100,7 @@ font-weight:bold;
 height:95vh;
 background:
 linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.55)),
-url('party_square_pizza.jpg');
+url('party-square-pizza.jpg');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -194,13 +193,25 @@ gap:35px;
 .menu-card{
 background:#fff;
 border-radius:30px;
-padding:40px;
+padding:0 0 40px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 transition:0.3s;
+overflow:hidden;
 }
 
 .menu-card:hover{
 transform:translateY(-8px);
+}
+
+.menu-card img{
+width:100%;
+height:320px;
+object-fit:cover;
+display:block;
+}
+
+.menu-content{
+padding:35px 40px 0;
 }
 
 .menu-content h3{
@@ -441,6 +452,10 @@ font-size:20px;
 grid-template-columns:1fr;
 }
 
+.menu-card img{
+height:260px;
+}
+
 .section-title h2{
 font-size:50px;
 }
@@ -543,6 +558,7 @@ View Menu
 <div class="menu-grid">
 
 <div class="menu-card">
+<img src="party-square-pizza.jpg" alt="Party Square Pizza">
 <div class="menu-content">
 <h3>Party Square Pizza</h3>
 <p>1 topping party square pizza.</p>
@@ -551,6 +567,7 @@ View Menu
 </div>
 
 <div class="menu-card">
+<img src="duo-deal.jpg" alt="Duo Deal">
 <div class="menu-content">
 <h3>Duo Deal</h3>
 <p>2 pizzas, 6 toppings total, 3 drinks, and 2 dips.</p>
@@ -559,6 +576,7 @@ View Menu
 </div>
 
 <div class="menu-card">
+<img src="chicken-shawarma-pizza.jpg" alt="Chicken Shawarma Pizza">
 <div class="menu-content">
 <h3>Chicken Shawarma Pizza</h3>
 <p>Garlic base, chicken shawarma, red onions, tomatoes, signature garlic drizzle.</p>
@@ -567,6 +585,7 @@ View Menu
 </div>
 
 <div class="menu-card">
+<img src="bbq-chicken-pizza.jpg" alt="BBQ Chicken Pizza">
 <div class="menu-content">
 <h3>BBQ Chicken Pizza</h3>
 <p>BBQ sauce base, BBQ chicken, green peppers, and onions.</p>
@@ -575,6 +594,7 @@ View Menu
 </div>
 
 <div class="menu-card">
+<img src="butter-chicken-pizza.jpg" alt="Butter Chicken Pizza">
 <div class="menu-content">
 <h3>Butter Chicken Pizza</h3>
 <p>Butter chicken sauce, butter chicken, green peppers, red peppers, and onions.</p>
@@ -583,6 +603,7 @@ View Menu
 </div>
 
 <div class="menu-card">
+<img src="tandoori-chicken-pizza.jpg" alt="Tandoori Chicken Pizza">
 <div class="menu-content">
 <h3>Tandoori Chicken Pizza</h3>
 <p>Tandoori base, tandoori chicken, onions, and green peppers.</p>
@@ -591,6 +612,7 @@ View Menu
 </div>
 
 <div class="menu-card">
+<img src="wings.jpg" alt="Chicken Wings">
 <div class="menu-content">
 <h3>Wings</h3>
 <p>Classic wings available in 1 lb, 2 lb, and 5 lb portions.</p>
@@ -599,6 +621,7 @@ View Menu
 </div>
 
 <div class="menu-card">
+<img src="loaded-fries.jpg" alt="Loaded Fries">
 <div class="menu-content">
 <h3>Loaded Fries</h3>
 <p>Crispy fries topped with cheese, savory chicken, jalapeños, and sauces.</p>
@@ -682,7 +705,7 @@ Order Now
 
 </div>
 
-<img src="party_square_pizza.jpg" alt="Fresh Pizza">
+<img src="party-square-pizza.jpg" alt="Fresh Pizza">
 
 </section>
 
