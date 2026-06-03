@@ -186,7 +186,7 @@ gap:35px;
 .menu-card{
 background:#fff;
 border-radius:30px;
-padding:0 0 40px;
+padding:20px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 transition:0.3s;
 overflow:hidden;
@@ -196,19 +196,22 @@ overflow:hidden;
 transform:translateY(-8px);
 }
 
-/* MENU IMAGES SHOW FULL IMAGE */
+/* MENU IMAGES SHOW FULL IMAGE WITH LESS EMPTY SPACE */
 .menu-card img{
 width:100%;
-height:400px;
+height:auto;
+max-height:340px;
 object-fit:contain;
 object-position:center;
 display:block;
 background:#fff;
-padding:15px;
+padding:10px;
+margin:auto;
+border-radius:22px;
 }
 
 .menu-content{
-padding:35px 40px 0;
+padding:20px;
 }
 
 .menu-content h3{
@@ -450,7 +453,8 @@ grid-template-columns:1fr;
 }
 
 .menu-card img{
-height:320px;
+height:auto;
+max-height:260px;
 object-fit:contain;
 }
 
@@ -556,7 +560,7 @@ View Menu
 <div class="menu-grid">
 
 <div class="menu-card">
-<img src="party-square-pizza.jpg" alt="Party Square Pizza">
+<img src="party-square-pizza.jpg" alt="Party Square Pizza" loading="lazy">
 <div class="menu-content">
 <h3>Party Square Pizza</h3>
 <p>1 topping party square pizza.</p>
@@ -565,7 +569,7 @@ View Menu
 </div>
 
 <div class="menu-card">
-<img src="duo-deal.jpg" alt="Duo Deal">
+<img src="duo-deal.jpg" alt="Duo Deal" loading="lazy">
 <div class="menu-content">
 <h3>Duo Deal</h3>
 <p>2 pizzas, 6 toppings total, 3 drinks, and 2 dips.</p>
@@ -574,7 +578,7 @@ View Menu
 </div>
 
 <div class="menu-card">
-<img src="chicken-shawarma-pizza.jpg" alt="Chicken Shawarma Pizza">
+<img src="chicken-shawarma-pizza.jpg" alt="Chicken Shawarma Pizza" loading="lazy">
 <div class="menu-content">
 <h3>Chicken Shawarma Pizza</h3>
 <p>Garlic base, chicken shawarma, red onions, tomatoes, signature garlic drizzle.</p>
@@ -583,7 +587,7 @@ View Menu
 </div>
 
 <div class="menu-card">
-<img src="bbq-chicken-pizza.jpg" alt="BBQ Chicken Pizza">
+<img src="bbq-chicken-pizza.jpg" alt="BBQ Chicken Pizza" loading="lazy">
 <div class="menu-content">
 <h3>BBQ Chicken Pizza</h3>
 <p>BBQ sauce base, BBQ chicken, green peppers, and onions.</p>
@@ -592,7 +596,7 @@ View Menu
 </div>
 
 <div class="menu-card">
-<img src="butter-chicken-pizza.jpg" alt="Butter Chicken Pizza">
+<img src="butter-chicken-pizza.jpg" alt="Butter Chicken Pizza" loading="lazy">
 <div class="menu-content">
 <h3>Butter Chicken Pizza</h3>
 <p>Butter chicken sauce, butter chicken, green peppers, red peppers, and onions.</p>
@@ -601,7 +605,7 @@ View Menu
 </div>
 
 <div class="menu-card">
-<img src="tandoori-chicken-pizza.jpg" alt="Tandoori Chicken Pizza">
+<img src="tandoori-chicken-pizza.jpg" alt="Tandoori Chicken Pizza" loading="lazy">
 <div class="menu-content">
 <h3>Tandoori Chicken Pizza</h3>
 <p>Tandoori base, tandoori chicken, onions, and green peppers.</p>
@@ -610,7 +614,7 @@ View Menu
 </div>
 
 <div class="menu-card">
-<img src="wings.jpg" alt="Chicken Wings">
+<img src="wings.jpg" alt="Chicken Wings" loading="lazy">
 <div class="menu-content">
 <h3>Wings</h3>
 <p>Classic wings available in 1 lb, 2 lb, and 5 lb portions.</p>
@@ -619,7 +623,7 @@ View Menu
 </div>
 
 <div class="menu-card">
-<img src="loaded-fries.jpg" alt="Loaded Fries">
+<img src="loaded-fries.jpg" alt="Loaded Fries" loading="lazy">
 <div class="menu-content">
 <h3>Loaded Fries</h3>
 <p>Crispy fries topped with cheese, savory chicken, jalapeños, and sauces.</p>
