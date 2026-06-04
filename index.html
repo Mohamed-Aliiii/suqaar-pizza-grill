@@ -18,7 +18,7 @@ scroll-behavior:smooth;
 
 body{
 font-family:Arial,sans-serif;
-background:#f5f1e8;
+background:#ffffff;
 color:#111;
 }
 
@@ -90,7 +90,7 @@ color:#000;
 font-weight:bold;
 }
 
-/* HERO REMAINS COVER */
+/* HERO */
 .hero{
 height:95vh;
 background:
@@ -175,6 +175,7 @@ margin-top:10px;
 
 .menu-section{
 padding:120px 8%;
+background:#fff;
 }
 
 .menu-grid{
@@ -187,26 +188,29 @@ gap:35px;
 background:#fff;
 border-radius:30px;
 padding:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+box-shadow:0 15px 35px rgba(0,0,0,0.10);
 transition:0.3s;
 overflow:hidden;
+border:1px solid #f1f1f1;
 }
 
 .menu-card:hover{
 transform:translateY(-8px);
 }
 
-/* MENU IMAGES SHOW FULL IMAGE WITH LESS EMPTY SPACE */
 .menu-card img{
 width:100%;
-height:320px;
-object-fit:contain;
+height:420px;
+object-fit:cover;
 object-position:center;
 display:block;
 background:#fff;
-padding:0;
-margin:0 auto;
 border-radius:22px;
+transition:0.3s;
+}
+
+.menu-card:hover img{
+transform:scale(1.03);
 }
 
 .menu-content{
@@ -230,7 +234,6 @@ font-size:28px;
 font-weight:bold;
 color:#c40000;
 }
-
 
 /* CLOVER */
 
@@ -291,6 +294,7 @@ margin-bottom:20px;
 
 .contact-section{
 padding:120px 8%;
+background:#fff;
 }
 
 .contact-grid{
@@ -304,6 +308,7 @@ background:#fff;
 padding:40px;
 border-radius:30px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
+border:1px solid #f1f1f1;
 }
 
 .contact-card h3{
@@ -419,7 +424,6 @@ font-size:20px;
 }
 
 .menu-grid,
-.visual-grid,
 .about-section,
 .contact-grid,
 .footer-grid{
@@ -427,8 +431,8 @@ grid-template-columns:1fr;
 }
 
 .menu-card img{
-height:250px;
-object-fit:contain;
+height:300px;
+object-fit:cover;
 }
 
 .section-title h2{
@@ -454,8 +458,6 @@ gap:10px;
 .hours-list div span:last-child{
 white-space:normal;
 }
-
-/* Footer mobile fix */
 
 .footer-bottom{
 text-align:left;
@@ -493,8 +495,8 @@ href="https://www.clover.com/online-ordering/suqaar-restaurant-niagara-falls"
 target="_blank">
 Order Online
 </a>
-
 </nav>
+
 </header>
 
 <section class="hero" id="home">
@@ -502,21 +504,14 @@ Order Online
 <div class="hero-content">
 
 <div class="tag">🍕 Pizza • 🍗 Wings • 🥤 Drinks • 🚚 Free Delivery</div>
-<h2>
-Fresh Halal Pizza,
-Wings & Family Deals
-</h2>
+
+<h2>Fresh Halal Pizza, Wings & Family Deals</h2>
 
 <p>
 Fresh halal pizza, wings, loaded fries, family specials, and grilled favourites prepared daily and delivered throughout Niagara Falls.
 </p>
 
-<p style="
-color:#f7c325;
-font-size:28px;
-font-weight:bold;
-margin-top:15px;
-">
+<p style="color:#f7c325;font-size:28px;font-weight:bold;margin-top:15px;">
 🚚 FREE DELIVERY AVAILABLE THROUGHOUT NIAGARA FALLS
 </p>
 
@@ -528,9 +523,7 @@ target="_blank">
 Order Online with Clover
 </a>
 
-<a class="btn-secondary" href="#menu">
-View Menu
-</a>
+<a class="btn-secondary" href="#menu">View Menu</a>
 
 </div>
 </div>
@@ -620,15 +613,11 @@ View Menu
 </div>
 </section>
 
-
-
 <section class="clover-section">
 
 <h2>Order Online</h2>
 
-<p>
-Enjoy fast and secure online ordering through Clover.
-</p>
+<p>Enjoy fast and secure online ordering through Clover.</p>
 
 <a class="btn-primary"
 href="https://www.clover.com/online-ordering/suqaar-restaurant-niagara-falls"
@@ -642,22 +631,11 @@ Start Your Order
 
 <div>
 
-<span style="
-color:#c40000;
-font-weight:bold;
-letter-spacing:4px;
-font-size:18px;
-display:block;
-margin-bottom:14px;
-">
+<span style="color:#c40000;font-weight:bold;letter-spacing:4px;font-size:18px;display:block;margin-bottom:14px;">
 ABOUT US
 </span>
 
-<h2>
-Fresh Halal Food,
-Family Deals,
-and Flavour You Remember.
-</h2>
+<h2>Fresh Halal Food, Family Deals, and Flavour You Remember.</h2>
 
 <p>
 Suqaar Pizza & Grill brings fresh halal pizza, wings, loaded fries,
@@ -669,12 +647,7 @@ Whether you are ordering lunch, dinner, or a late-night meal, we prepare
 every order with freshness, value, bold flavour, and warm service.
 </p>
 
-<p style="
-color:#c40000;
-font-size:24px;
-font-weight:bold;
-margin-bottom:28px;
-">
+<p style="color:#c40000;font-size:24px;font-weight:bold;margin-bottom:28px;">
 🚚 Free delivery available throughout Niagara Falls.
 </p>
 
@@ -687,6 +660,7 @@ Order Now
 </div>
 
 <img src="duo-deal.jpg" alt="Suqaar Pizza & Grill Special Deal">
+
 </section>
 
 <section class="contact-section" id="contact">
